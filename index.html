@@ -21,9 +21,10 @@
     nav {
       background: #333;
       padding: 10px;
-      display: wrap;
+      display: flex;
       justify-content: center;
       gap: 20px;
+      white-space:nowrap;
     }
     nav a {
       color: white;
@@ -31,9 +32,16 @@
       font-weight: bold;
     }
     @media (max-width: 500px) {
+    nav {
+    gap: 8px; /* smaller spacing */
+    padding: 8px;
+    }
+
     nav a {
-    font-size: 14px;
-    padding: 5px 10px;}}
+    font-size: 12px;   /* smaller text */
+    padding: 2px 4px;  /* reduce clickable area */
+      }
+    }
     
     .hero {
       text-align: center;
