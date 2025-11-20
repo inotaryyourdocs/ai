@@ -90,6 +90,26 @@
       background: #1a1a1a;
       color: white;
     }
+    .cta-bar {
+      text-align: center;
+      background-color: #ff9800; /* bright, attention-grabbing */
+      padding: 12px 0;
+    }
+
+    .cta-bar .cta-button {
+      display: inline-block;
+      background-color: #1a1a1a; /* button color */
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-bar .cta-button:hover {
+      background-color: #333; /* hover effect */
+    }
   </style>
 </head>
 <body>
@@ -110,6 +130,11 @@
     <a href="service-areas.html">Service Areas</a>
 
   </nav>
+
+  <div class="cta-bar">
+    <a href="#contact" class="cta-button">We come to you. Book a mobile appointment</a>
+  </div>
+
 
   <div class="hero" id="home">
     <img src="notary.jpeg" alt="Your Photo" />
